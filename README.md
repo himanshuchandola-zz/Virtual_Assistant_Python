@@ -1,1 +1,1 @@
-# A Simp;e Virtual Assistant in Python
+# A Simple Virtual Assistant in Python
