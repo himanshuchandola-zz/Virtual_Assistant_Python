@@ -10,6 +10,10 @@ import wikipedia
 import pyttsx3
 import time
 import random
+import ctypes
+
+ctypes.windll.kernel32.SetConsoleTitleW("Simple Virtual Assistant By Himanshu Chandola ")
+os.system('cls')
 
 # Required engines
 engine = pyttsx3.init('sapi5')
@@ -161,7 +165,7 @@ while running:
             wb.get().open_new_tab('https://www.youtube.com/results?search_query=' + abc3)
 
     elif 'your name' in text or text == 'what is the name':
-        speak('My name is Sylvie')
+        speak('My name is Panda')
     elif text == 'hi' or text == 'hello' or text == 'hai' or text == 'hello hai' or text == 'hello hi':
         speak('Hello sir. how can I help you?')
     elif text == 'i am fine what about you' or text == "i'm fine what about you" or 'how are you' in text or 'what about you' in text:
@@ -185,7 +189,7 @@ while running:
     elif 'open instagram' in text:
         speak('ok. opening instagram')
         wb.get().open_new_tab('https://instagram.com')
-    elif text == 'quit' or text == 'sylvie bye' or text == 'sylvie quit' or text == 'bye' or 'bye' in text or 'quit' in text:
+    elif text == 'quit' or text == 'panda bye' or text == 'panda quit' or text == 'bye' or 'bye' in text or 'quit' in text:
         speak('bye bye sir. thanks for your time')
         running = False
         sys.exit()
